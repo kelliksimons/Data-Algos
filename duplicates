@@ -1,0 +1,18 @@
+'''
+Given an integer array nums, return true if any value appears more than once in the array,
+otherwise return false.
+'''
+from typing import List
+
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        hashset = set()
+        for n in nums: # Traverse through list of numbers
+            if n in hashset: # Checks if value is in hashset which contains no duplicates
+                return True # Return True if found, means a duplicate is found.
+            hashset.add(n) # Add number to the hashset so when the loop runs again it'll find duplicate.
+        return False # Return false if no dupes found. 
+
+test = Solution()
+print(test.hasDuplicate([1, 2, 3, 4]))  # Output: False
+print(test.hasDuplicate([1, 2, 3, 1]))  # Output: True
