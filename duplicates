@@ -1,6 +1,6 @@
 '''
 Given an integer array nums, return true if any value appears more than once in the array,
-otherwise return false.
+otherwise return false
 '''
 from typing import List
 
@@ -14,5 +14,5 @@ class Solution:
         return False # Return false if no dupes found. 
 
 test = Solution()
-print(test.hasDuplicate([1, 2, 3, 4]))  # Output: False
-print(test.hasDuplicate([1, 2, 3, 1]))  # Output: True
+print(test.hasDuplicate([1, 2, 3, 4]))  # Output: False in Testing
+print(test.hasDuplicate([1, 2, 3, 1]))  # Output: True in Testing
