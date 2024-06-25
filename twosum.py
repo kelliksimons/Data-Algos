@@ -13,4 +13,4 @@ class Solution:
 
 test = Solution()
 
-print(test.twoSum([1,2,5,4], 9 )) 
+print(test.twoSum([1,2,5,4], 8 )) 
